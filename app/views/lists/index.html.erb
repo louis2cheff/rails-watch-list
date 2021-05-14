@@ -1,0 +1,14 @@
+<h1> Ma liste 📝 <h1>
+
+
+<%# List.Movies.each %>
+
+<ul>
+  <% @lists.each do |list| %>
+    <li><%= link_to list.name,  list_path(list) %></li>
+
+  <% end %>
+</ul>
+
+
+<%= link_to "add a list", new_list_path %>
